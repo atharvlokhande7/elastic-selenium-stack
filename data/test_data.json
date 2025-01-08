@@ -1,0 +1,17 @@
+{
+    "login": {
+      "valid": {
+        "username": "valid_user",
+        "password": "valid_password"
+      },
+      "invalid": {
+        "username": "invalid_user",
+        "password": "invalid_password"
+      }
+    },
+    "post": {
+      "search_keyword": "Python",
+      "comment_text": "This is an automated comment."
+    }
+  }
+  
