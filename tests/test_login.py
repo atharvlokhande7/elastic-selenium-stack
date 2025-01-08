@@ -20,12 +20,15 @@ class TestLogin(BaseTest):
         # Press "Enter" to submit the form instead of clicking the button
         password_field.send_keys(Keys.RETURN)
         
-        # Wait for a specific element to ensure successful login (e.g., user profile icon)
+        # Wait for the profile image and status indicator to ensure successful login
         WebDriverWait(self.driver, 20).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, ".profile-avatar"))
+            EC.presence_of_element_located((By.XPATH, "//img[@alt='User Avatar']"))
         )
 
         # Check if the profile avatar (or other element) is displayed, indicating a successful login
-        profile_avatar = self.driver.find_element(By.CSS_SELECTOR, ".profile-avatar")
-        assert profile_avatar.is_displayed()
+        profile_avatar = self.driver.find_element(By.XPATH, "//img[@alt='User Avatar']")
+        status_indicator = self.driver.find_element(By.CSS_SELECTOR, ".bg-online")
 
+        # Assert that both the profile image and the status indicator are displayed
+        assert profile_avatar.is_displayed(), "Profile avatar not displayed"
+        assert status_indicator.is_displayed(), "Status indicator not displayed"
