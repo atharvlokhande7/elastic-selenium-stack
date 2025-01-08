@@ -1,8 +1,8 @@
 {
     "login": {
       "valid": {
-        "username": "valid_user",
-        "password": "valid_password"
+        "username": "test_the_process",
+        "password": "3H,2KGyu#7m4))M"
       },
       "invalid": {
         "username": "invalid_user",

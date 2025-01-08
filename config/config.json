@@ -1,5 +1,5 @@
 {
-    "base_url": "https://www.reddit.com",
+    "base_url": "https://www.reddit.com/login/",
     "browser": "chrome",
     "timeout": 10
   }
