@@ -9,9 +9,14 @@
         "password": "invalid_password"
       }
     },
-    "post": {
-      "search_keyword": "Python",
-      "comment_text": "This is an automated comment."
-    }
+    
+      "post": {
+        "valid": {
+          "title": "Double-check the spelling and formatting of the subreddit name you're trying to post to.",
+          "content": "The subreddit you're trying to post in may have been set to private or restricted. If the subreddit is private, you won’t be able to see or post in it unless you’ve been approved as a member."
+        }
+      }
+    
+    
   }
   
